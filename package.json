@@ -1,0 +1,14 @@
+{
+  "name": "stylo-ai-stylist",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "wrangler": "^4.36.0"
+  }
+}
