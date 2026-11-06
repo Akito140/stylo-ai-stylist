@@ -41,7 +41,7 @@ Requirements: Node.js 20+, a Cloudflare account, and a Gemini API key.
    npx wrangler secret put GEMINI_API_KEY
    ```
 
-4. In the Cloudflare dashboard, open the Worker settings and add the variable `ALLOWED_ORIGINS` with the exact origin(s) of the website(s) allowed to use the API. Example:
+4. The production origin `https://akito140.github.io` and default Gemini model are set in `wrangler.toml`. If you deploy this backend for a different site, change `ALLOWED_ORIGINS` to the exact origin(s) of that site before deploying. Example:
 
    ```text
    https://akito140.github.io,http://localhost:5173
@@ -49,7 +49,7 @@ Requirements: Node.js 20+, a Cloudflare account, and a Gemini API key.
 
    An origin is the scheme + hostname + optional port; do not include a path.
 
-5. Optionally add `GEMINI_MODEL` as a Worker variable. The default is `gemini-3.5-flash-lite`; confirm that the model is available for the API key and free tier in AI Studio.
+5. The configured model is `gemini-3.5-flash-lite`; confirm that it is available for your API key and free tier in AI Studio.
 
 6. Deploy:
 

@@ -2,6 +2,10 @@ name = "stylo-ai-stylist"
 main = "src/index.js"
 compatibility_date = "2026-11-06"
 
+[vars]
+ALLOWED_ORIGINS = "https://akito140.github.io"
+GEMINI_MODEL = "gemini-3.5-flash-lite"
+
 [[ratelimits]]
 name = "STYLIST_RATE_LIMITER"
 namespace_id = "1001"
